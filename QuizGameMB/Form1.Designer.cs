@@ -61,7 +61,7 @@
             this.userlogin.TabIndex = 1;
             this.userlogin.Text = "Zaloguj sié jako gracz";
             this.userlogin.UseVisualStyleBackColor = false;
-            this.userlogin.Click += new System.EventHandler(this.button1_Click);
+            this.userlogin.Click += new System.EventHandler(this.userlogin_Click);
             // 
             // adminlogin
             // 
@@ -81,7 +81,7 @@
             this.settings.TabIndex = 3;
             this.settings.Text = "Ustawienia";
             this.settings.UseVisualStyleBackColor = true;
-            this.settings.Click += new System.EventHandler(this.button3_Click);
+            this.settings.Click += new System.EventHandler(this.settings_Click);
             // 
             // help
             // 
@@ -91,6 +91,7 @@
             this.help.TabIndex = 4;
             this.help.Text = "Pomoc";
             this.help.UseVisualStyleBackColor = true;
+            this.help.Click += new System.EventHandler(this.help_Click);
             // 
             // panelmenu
             // 
@@ -123,6 +124,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ExaQuiz";
             this.Text = "ExaQuiz";
+            this.Load += new System.EventHandler(this.ExaQuiz_Load);
             this.panelmenu.ResumeLayout(false);
             this.panelmenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();

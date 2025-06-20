@@ -22,22 +22,38 @@ namespace QuizGameMB
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void userlogin_Click(object sender, EventArgs e)
         {
-
+            userLoginForm userLoginForm = new userLoginForm();
+            userLoginForm.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void settings_Click(object sender, EventArgs e)
         {
+            SettingsForm settingsForm = new SettingsForm();
+            settingsForm.ShowDialog();
 
         }
 
         private void adminlogin_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            adminlogin adminLoginForm = new adminlogin();
+            adminLoginForm.ShowDialog();
         }
 
         private void panelmenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void help_Click(object sender, EventArgs e)
+        {
+            helpForm helpForm = new helpForm();
+            helpForm.ShowDialog();
+        }
+
+        private void ExaQuiz_Load(object sender, EventArgs e)
         {
 
         }
